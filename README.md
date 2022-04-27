@@ -1,5 +1,10 @@
 # 02_DartWeb
 
+课堂作业要求：
+- 必做：改写“一”， “二”， “三”
+- 必做：阅读HTML相关知识
+- 选做：扩展阅读
+
 ## 一、Add elements to the DOM
 
 * WEB：[https://dart.dev/tutorials/web/low-level-html/add-elements](https://dart.dev/tutorials/web/low-level-html/add-elements)
