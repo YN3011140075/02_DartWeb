@@ -1,3 +1,5 @@
+// （https://dart.dev/tutorials/web/fetch-data#using-getString-function）
+
 import 'dart:async';
 import 'dart:convert';
 import 'dart:html';
