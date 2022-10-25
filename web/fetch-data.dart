@@ -83,6 +83,7 @@ void _showJson([Event? _]) {
     favTwo.value ?? '',
     favThree.value ?? '',
   ];
+  // 双问号，表示如果左侧有值就取左侧，否则就取右侧（https://blog.csdn.net/nimeghbia/article/details/100921620）
 
   final formData = {
     'favoriteNumber': favNum,

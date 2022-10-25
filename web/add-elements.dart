@@ -10,7 +10,11 @@ void main() {
 }
 
 void addToDoItem(Event e) {
-  final newToDo = LIElement()..text = toDoInput.value;
-  toDoInput.value = '';
+  final newToDo = LIElement()..text = toDoInput.value; 
+  // 链式调用（https://www.jianshu.com/p/35063261c583）
+  // var a = new LIElement();
+  // a.text = 'got: ${toDoInput.value}';
+  // final newToDo = a;
+  // toDoInput.value = '';
   toDoList.children.add(newToDo);
 }

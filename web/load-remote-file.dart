@@ -12,6 +12,7 @@ void main() {
 
 Future<void> makeRequest(Event _) async {
   const path = 'portmanteaux.json';
+  // 此处path是一个相对路径
   try {
     // Make the GET request
     final jsonString = await HttpRequest.getString(path);
@@ -27,6 +28,6 @@ Future<void> makeRequest(Event _) async {
 void processResponse(String jsonString) {
   for (final portmanteau in json.decode(jsonString) as List<dynamic>) {
     // 试试用 SET 消除重复的元素？
-    wordList.children.add(LIElement()..text = portmanteau as String);
+    wordList.children.add(LIElement()..text = portmanteau as String); // 链式调用
   }
 }
